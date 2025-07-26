@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Discount-->
+    <div id="discount" class="p-2 flex gap-20 items-center justify-center">
+        <p class="text-xs md:text-2xl text-center">
+            Sign Up and <b>Get 20% OFF</b> for your first Order
+        </p>
+
+        <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="size-6 md:w-6 md:h-6 w-3 h-3 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+
+
+    </div>
+
+    <!--Responsive Navbar-->
+    <nav class="bg-white p-3 flex items-center justify-between sticky z-30 top-0">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="size-6 w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+
+        <ul class="flex gap-10 hidden md:flex">
+            <li>
+                <a class="hover:underline" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#" id="New-Arrival-Btn">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="#" id="Most-Wanted-Btn">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="collection-page.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline" href="contact-page.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+
+    <!--Creating Collections Site-->
+
+    <div id="main" class="flex">
+        <div id="collections" class="w-1/4 border-black border-r-2">
+
+            <div id="collectionpage__text1">
+                <p class="text-4xl font-extrabold ml-5 mt-5">Occasion</p>
+                <div id="Occasion" class="flex-col text-4xl p-5" style="width: 30%;">
+                    <label class="flex"><input class="mr-4" type="checkbox" name="Occasion"
+                            value="Summer">Summer</label>
+                    <label class="flex"><input class="mr-4" type="checkbox" name="Occasion" value="Party">Party</label>
+                    <label class="flex"><input class="mr-4" type="checkbox" name="Occasion" value="Beach">Beach</label>
+
+                </div>
+
+                <p class="text-4xl font-extrabold ml-5 mt-10">Colours</p>
+                <div id="Colours" class="flex flex-col text-4xl p-5" style="width: 30%;">
+                    <label class="flex"><input class="mr-4" type="checkbox" name="colours" value="Red">Red</label>
+                    <label class="flex"><input class="mr-4" type="checkbox" name="colours" value="Blue">Blue</label>
+                    <label class="flex"><input class="mr-4" type="checkbox" name="colours" value="White">White</label>
+                    <label class="flex"><input class="mr-4" type="checkbox" name="colours" value="Green">Green</label>
+
+                </div>
+
+
+                <p class="text-4xl font-extrabold ml-5 mt-10">Arrivals</p>
+                <div id="Arrivals" class="flex flex-col text-4xl p-5" style="width: 30%;">
+                    <label class="flex"><input class="mr-4" type="checkbox" name="Arrivals" value="New">New</label>
+                    <label class="flex"><input class="mr-4" type="checkbox" name="Arrivals" value="Old">Old</label>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- creating  collection images -->
+        <main class="w-3/4 p-4">
+            <div id="collectionsite__searchbar" class="mb-6">
+                <div class="relative w-full mx-auto">
+                    <input placeholder="Search" type="text"
+                        class="w-full block border border-gray-400 rounded-lg py-2 pl-4 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500">
+                    <span class="absolute inset-y-0 right-3 flex items-center pointer-events-none text-xl">🔍</span>
+                </div>
+            </div>
+
+            <div id="collection__image--container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div id="collection-shirt7"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Summer" data-color="Red" data-arrival="New">
+                    <img src="./images/i1.jpg" alt="Floral Summer Shirt" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Floral Summer Shirt</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹220</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt8"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Summer" data-color="Green" data-arrival="New">
+                    <img src="./images/i2.jpg" alt="Summer Green" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Summer Green</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹260</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt9"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Party" data-color="Blue" data-arrival="New">
+                    <img src="./images/i3.jpg" alt="Party Floral Shirt" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Party Floral Shirt</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹399</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt10"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Beach" data-color="White" data-arrival="New">
+                    <img src="./images/i4.jpg" alt="beach shirt" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Beach Shirt</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹180</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt11"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Summer" data-color="Green" data-arrival="Old">
+                    <img src="./images/i5.jpg" alt="Summer Green" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Summer Green</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹260</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt12"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Party" data-color="Red" data-arrival="Old">
+                    <img src="./images/i6.jpg" alt="Party Floral Shirt" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Party Floral Shirt</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹300</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt13"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Summer" data-color="Red" data-arrival="New">
+                    <img src="./images/i7.jpg" alt="Floral Summer Shirt" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Floral Summer Shirt</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹220</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt14"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Beach" data-color="Blue" data-arrival="Old">
+                    <img src="./images/i8.jpg" alt="Summer Green" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Beach Blue Shirt</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹260</p>
+
+                    </div>
+                </div>
+
+                <div id="collection-shirt3"
+                    class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow flex flex-col items-center"
+                    data-occasion="Party" data-color="White" data-arrival="Old">
+                    <img src="./images/i9.jpg" alt="Summer Green" class="my-4"
+                        style="max-width: 100%; height: auto; display: block;">
+                    <div class="p-4 w-full flex flex-col items-center">
+                        <h3 class="font-bold text-3xl mb-2">Party White Shirt</h3>
+                        <p class="text-gray-600 text-xl font-semibold">₹260</p>
+
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!--NewsLetter Section-->
+    <section id="news-section" class="mt-20 ml-3 mr-5">
+        <div id="news-container" class="flex flex-col gap-5 justify-center items-center">
+            <h1 class="text-4xl font-bold">Join Our News Letter</h1>
+            <h1 class="text-3xl">Signup for our email newspaper to get exclusive discounts, updates, and more</h1>
+            <input type="text" class="border border-black">
+            <button>Subscribe</button>
+
+        </div>
+
+    </section>
+
+    <!--Footer Section-->
+    <footer id="footer-section" class="mt-20">
+        <div id="footer-container" class="p-10 flex flex-col justify-center gap-3">
+            <h1 class="font-bold text-5xl">Nostra</h1>
+            <h1 class="text-4xl">The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those
+                intrest</h1>
+            <div id="social-media" class="flex gap-10">
+                <div class="social">
+                    <img src="./images/s1.png">
+                </div>
+                <div class="social">
+                    <img src="./images/s2.png">
+                </div>
+
+                <div class="social">
+                    <img src="./images/s3.png">
+                </div>
+
+            </div>
+            <h1 class="text-4xl">@ 2023 Nostra.com</h1>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+    <!--Script Tag-->
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
